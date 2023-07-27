@@ -1,0 +1,33 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "aos/dist/aos.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+}
+@layer components {
+    .media{
+        @apply grid sm:grid-cols-1 md:grid-cols-12;
+    }
+    .link{
+        @apply font-bold text-gray-400 hover:text-amber-600;
+    }
+}
+@layer utilities{
+    .comic{
+        font-family: comic sans ms;
+    }
+    .serif{
+        font-family: sans-serif;
+    }
+    .y{
+        scrollbar-width: none;
+    }
+
+}
